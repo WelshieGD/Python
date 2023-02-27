@@ -19,3 +19,9 @@ print("\n",message2.rstrip(),"\n")
 
 # Also strip() to strip whitespace from right and left of string
 
+
+fullname = "   a name is just a number using letters    "
+print({fullname})
+print("\nStripped Left",{fullname.lstrip()})
+print("\nStripped Right",{fullname.rstrip()})
+print("\nStrip off completeley",{fullname.strip()})
