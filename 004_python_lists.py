@@ -2,6 +2,7 @@
 
 bassguitars = ['Yamaha','Fender','Sire','Ibanez']
 
+# region changingcase
 # Print out List
 print(f"This is a list of bass guitar manufacturers {bassguitars}\n")
 
@@ -10,6 +11,8 @@ print(f"The first bass guitar manufacturer in the list is {bassguitars[0]}\n")
 
 # Upper Case
 print(f"The first bass guitar in UPPER CASE is {bassguitars[0].upper()}\n")
+
+# endregion changingcase
 
 # Last item - Fender
 print(f"The last bass guitar manufacturer in the list is {bassguitars[-1]}\n")
@@ -27,7 +30,7 @@ bassguitars.append('Fender')
 print(f"Added {bassguitars[-1]}")
 print(f"The list is now {bassguitars}\n")
 
-# Insert elements into the list in any position you want
+# Insert elements into the list in any position you want e.g. 4th in the list as zero based index
 bassguitars.insert(3,'Cort')
 print(f"The list is now {bassguitars}\n")
 
