@@ -70,6 +70,6 @@ if anemptylist:
 else:
         print("This is an empty list")
 
-        
+
 
 #endregion checkiflistisempty
