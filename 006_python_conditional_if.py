@@ -41,6 +41,7 @@ else:
 #endregion ifinwithlist
 
 #region elseelseelse
+# Use when only one correct answer \ only one condition can ever evaluate to true as this will stop once a match is made. 
 month = "june"
 winter = ['December','January','February']
 spring = ['March','April','May']
@@ -54,8 +55,21 @@ if month.title() in winter:
 elif month.title() in spring:
     print ("It is spring time; everythings gone green")
 elif month.title() in summer:
-    print ("It is summer time!; let's go party")
+    print ("It is summer time!; let's go party\n")
 else:
-    print ("It must be autumn")
+    print ("It must be autumn\n")
 
 #endregion elseelseelse
+
+#region checkiflistisempty
+anemptylist = []
+
+# Returns true if contains one or more items
+if anemptylist:
+    print("This is not an empty list")
+else:
+        print("This is an empty list")
+
+        
+
+#endregion checkiflistisempty
