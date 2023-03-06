@@ -17,8 +17,55 @@ print(bassguitar['Make'] + ' ' + bassguitar['Model'] + ' with ' + bassguitar['st
 
 #endregion bassguitarmodels
 
+#region emptydictionary
+
+mycars={}
+
+# Add a value
+mycars['Make']= 'VW'
+print(f"I own a {mycars['Make']}")
+
+#endregion emptydictionary
+
+#region changevalue in dictionary
+
+mycars['Make']= 'BMW'
+print(f"I now own a {mycars['Make']}")
+
+#endregion changevalue in dictionary
+
+#region deleteakey
+del mycars['Make']
+print(mycars)
+
+#endregion deleteakey
+
+#region verticallayout
+
+employees = {
+    'Bob':'IT',
+    'Kevin':'Sales',
+    'Graham':'Boss',
+    'Tanja':'Real Boss'
+}
+
+print(f"Bob works in {employees['Bob']}")
+
+tanjasjob = employees['Tanja']
+print(f"Tanja is the {tanjasjob}")
 
 
+#endregion verticallayout
 
+#region setadefaultvalue
+# Set a default value if the key doesn't exist
+# Following on from previous example
 
+Jennysjob = employees.get('Jenny','Jenny doesnt work here anymore')
+print(Jennysjob)
+
+# If don't have a second aruement then returns None
+Anilsjob = employees.get('Anil')
+print(Anilsjob)
+#endregion setadefaultvalue
 
